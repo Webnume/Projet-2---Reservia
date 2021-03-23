@@ -1,0 +1,19 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+main {
+    display: flex;
+    line-height:5px;
+}
+header{
+    display: flex;
+}
+nav {
+    justify-content: flex-end;
+}
+
+#logo{
+    width: 100%;
+    height: auto;
+    max-width: 92px;
+}
