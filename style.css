@@ -1,15 +1,43 @@
 body{
-    font-family: 'Raleway', sans-serif;
-}
-main {
-    display: flex;
+    font-family: 'Raleway', sans-serif; 
     line-height:5px;
+    max-width: 1340px;
+    align-items: center;
+    justify-content: center;    
+    font-size: 1em ;
 }
+
+a {
+    text-decoration: none;
+}
+h1{
+    margin-top: 40px;
+}
+
 header{
-    display: flex;
+    display: flex;        
+    align-items: center;
 }
-nav {
-    justify-content: flex-end;
+
+nav{
+    margin-left: auto;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+
+nav a {
+    padding: 1em;
+    display: block;
+    text-align:center;
+    &:hover {
+        color: #4A4860;
+        background: #FFC4EB;
+        box-shadow: 0px 4px 0px 0px #BB8EAC;
+    }
 }
 
 #logo{
@@ -17,3 +45,72 @@ nav {
     height: auto;
     max-width: 92px;
 }
+
+#menu {
+    display: flex; 
+    flex-direction : row;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+  }
+  #search img {
+    width: 14px; background-color: #F2F2F2; padding: 0px 14px;border-radius: 12px 0px 0px 12px;
+  }  
+#search input{
+    padding: 1px 10px; 
+    line-height: 54px;
+    outline: none !important;
+    border:1px solid #F2F2F2;
+    font-weight: bold;
+    font-size: 1em ;
+}
+#search button {
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /* text-decoration: none; */
+    font-size: 14px;
+    border-radius: 0px 12px 12px 0px;
+    font-weight: bold;
+  }
+
+#filters{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 825px;
+}
+#filters .filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+    border: 3px solid #F2F2F2;
+    padding-right: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: auto;
+
+}
+#filters :first-child{
+    border: none;
+}
+#filters img{
+    width:1em;
+}
+.iconWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 45px; 
+    height: 45px; 
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    margin-right: 15px;
+  }

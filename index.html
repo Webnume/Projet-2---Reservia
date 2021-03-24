@@ -7,24 +7,57 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Document</title>
+
+    <title>Reservia</title>
 </head>
-<body id="main">
+<body>
     <header>
         <img id="logo" src="images\logo\Reservia.svg" alt="">
         <nav> 
-            <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
-                <li>S'inscrire</li>
+            <ul id="menu">
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+                <li><a href="#">S'inscrire</a></li>
             </ul>          
         </nav>
     </header>
     <main>
         <article>
-            <section>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br>
-                En plein centre ville ou en pleine nature
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br>
+            En plein centre ville ou en pleine nature                 
+            <section id="search">               
+                <img src="images\icones\map-marker-alt-solid.svg" alt="">            
+                <form action="#">                        
+                    <input type="text" placeholder="Marseille, France" >
+                    <button>Rechercher</button>
+                </form>
+            </section>
+            <section id="filters">                
+                <strong>Filtres</strong>
+                <div class="filter">
+                    <div class='iconWrapper'>
+                        <img src="images\icones\money-bill-wave-solid.png" alt="">
+                    </div> 
+                    <span>Économique</span> 
+                </div>
+                <div class="filter">
+                    <div class='iconWrapper'>
+                        <img src="images\icones\child-solid.png" alt="">
+                    </div> 
+                    <span>Familial</span> 
+                </div>
+                <div class="filter">
+                    <div class='iconWrapper'>
+                        <img src="images\icones\heart-solid.png" alt="">
+                    </div> 
+                    <span>Romantique</span> 
+                </div>
+                <div class="filter">
+                    <div class='iconWrapper'>
+                        <img src="images\icones\dog-solid.png" alt="">
+                    </div> 
+                    <span>Animaux autorisés</span> 
+                </div>
             </section>
         </article>
 
