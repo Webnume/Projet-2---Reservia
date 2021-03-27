@@ -404,8 +404,48 @@ footer div {
     margin-right: 20%;
 }
 
-@media (max-width: 600px) {
-    footer {
-      display: none;
+@media (max-width: 992px) {
+    
+    nav {
+       margin-left: 0;
+        display: flex;
+        justify-items: flex-start;
     }
-  }
+    body{
+        font-family: 'Raleway', sans-serif;  
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0;
+    }
+    main{
+        padding: 0;
+    }
+    #accommodations {
+        display: flex;
+        flex-direction: column;
+    } 
+    #accommodationsResultsFormat {
+        width: 95%; 
+        height: auto;
+    }
+    #accommodationsResults {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    } 
+    #accommodationsResults h4 {
+        flex-basis: 100%;
+        width: 0;
+    }
+    #accommodationsPopular {
+        margin-top: 1rem;
+        width: 95%;
+    }     
+    footer {
+        flex-direction: column;
+        height: 100%;
+    }
