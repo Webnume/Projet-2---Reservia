@@ -30,9 +30,13 @@
                 <img src="images\icones\map-marker-alt-solid.svg" alt="">            
                 <form action="#">                        
                     <input type="text" placeholder="Marseille, France" >
-                    <button>Rechercher</button>
+                    <button>
+                        <span class="text">Rechercher</span>
+                        <span class="icon"><img src="images\icones\search-solid.svg" /></span>
+                    </button>
                 </form>
             </section>
+
             <section id="filters">                
                 <strong>Filtres</strong>
                 <div class="filter zoom">
@@ -59,15 +63,16 @@
                     </div> 
                     <span>Animaux autorisés</span> 
                 </div>
+
+                <div class="info">
+                    <div class="iconWrapper2">
+                    <img src="images\icones\info-solid.svg" width="5px" alt="">
+                    </div> 
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+
             </section>
 
-            <div class="info">
-                <div class="iconWrapper2">
-                <img src="images\icones\info-solid.svg" width="5px" alt="">
-                </div> 
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-            
             <section id="accommodations">
                 <div id="accommodationsResultsFormat">
                     <h2>Hébergements à Marseille</h2>
@@ -168,7 +173,7 @@
                                 </div>    
                             </div>
                         </div>
-                        <h4><a href="#">Afficher plus</a><h4>
+                        <h4 id="returnLine"><a href="#">Afficher plus</a><h4>
                     </div>
                 </div>
                 
@@ -238,14 +243,14 @@
                              </div>
                         </div>
                         <div style="display: flex; flex-direction: column;">
-                            <div class="card" style="height: 238px;">
-                                <img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">                          
+                            <div class="card" style="height: 238px;    margin-bottom: 43px;">
+                                <img src="images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">                          
                                 <div class="container">
                                     <h3>Fort de Pomègues</h3>
                                 </div>
                             </div>
                             <div class="card" style="height: 164px;">
-                                <img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">                          
+                                <img src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">                          
                                 <div class="container">
                                     <h3>ïles du Frioul</h3>
                                 </div>
@@ -253,6 +258,29 @@
                         </div>
                         
                     </div> 
+                    <div id="activityResults">
+                        <div class="card">
+                            <img src="images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">                          
+                            <div class="container">
+                                <h3>Parc National des Calanques</h3>
+                             </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div class="card" style="height: 238px;    margin-bottom: 43px;">
+                                <img src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">                          
+                                <div class="container">
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </div>
+                            </div>
+                            <div class="card" style="height: 164px;">
+                                <img src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">                          
+                                <div class="container">
+                                    <h3>Parc Longchamp</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                     
                 </div>
                 
@@ -266,26 +294,27 @@
         <div>
             <h3>A propos</h3>
             <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialités</li>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialités</a></li>
             </ul>
         </div>
         <div>
             <h3>Nos hébergements</h3>
             <ul>
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
         <div>
             <h3>Assistance</h3>
             <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
             </ul>
         </div>
     </footer>
+
   </div>
 </body>
 </html>
