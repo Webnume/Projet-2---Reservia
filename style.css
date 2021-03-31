@@ -73,6 +73,7 @@ nav a {
 #menu {
     display: flex; 
     flex-direction : row;
+    width: 336px;
 }
 #menu ul li {
     display: inline-block;
@@ -96,7 +97,8 @@ nav a {
 .signUp{
     font-weight: bold;
     margin-left: 70px;
-    color: #0065FC;
+    color: #0065FC;    
+    align-self: center;
 
 }
 article{
@@ -129,7 +131,6 @@ article{
     color: white;
     padding: 14px 25px;
     text-align: center;
-    /* text-decoration: none; */
     font-size: 14px;
     border-radius: 0px 12px 12px 0px;
     font-weight: bold;
@@ -403,9 +404,6 @@ article{
     flex-direction: column;
     padding: 0px 16px;
 }
-
-
-
 footer{
     display: flex;
     flex-direction: row;
@@ -477,13 +475,7 @@ footer div {
     #accommodations {
         display: flex;
         flex-direction: column;
-    } 
-    #accommodationsResults {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-    } 
+    }
     #accommodationsResultsFormat {   
         width: 95%;
     }
@@ -533,8 +525,16 @@ footer div {
 @media (max-width: 777px) {
 
         header{
-            flex-direction: column;
-            align-items: flex-start;
+            display: grid;
+            justify-content: center;
+        }
+        #logo{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #menu{
+            grid-column: 1/2;
+            grid-row: 2;
         }
         #menu li a:hover {
             border-top: 0;
@@ -544,10 +544,26 @@ footer div {
             border-top: 0;
             border-bottom: 2px solid #0065FC;
         }
+        .signUp{
+            grid-column: 1;
+            grid-row: 1;
+            margin-left: 260px;
+        }
+        article {
+            align-items: center;
+        }
+        article h1 {
+            margin-left: 5%;
+            font-size: 1.8rem;
+        }
+        #search {
+            display: flex;
+            justify-content: center;
+        }
         #search .icon {
             display:inline-block;
         }
-        #search img{
+        #search .icon img:nth-child(1){
             background-color: transparent;
             width: 1rem; ;
             padding-left: 0rem;
@@ -559,6 +575,62 @@ footer div {
             border-radius: 12px;
             width: 60px;
         }
+        #filters{
+            display: grid;
+            grid-gap: 1rem;
+            max-width: 388px;
+        }
+        #filters :nth-child(1){            
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #filters :nth-child(2){            
+            grid-column: 1;
+            grid-row: 2;
+        }
+        #filters :nth-child(3){            
+            grid-column: 2;
+            grid-row: 2;
+        }
+        #filters :nth-child(4){            
+            grid-column: 1;
+            grid-row: 3;
+        }        
+        #filters :nth-child(5){            
+            grid-column: 1;
+            grid-row: 4;
+        } 
+        #filters :nth-child(6){            
+            grid-column: 1 / 3;
+            grid-row: 5;
+        }     
+        .info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 0px;
+            width: auto;
+            margin-bottom: 2rem;
+        }
+        #accommodations {
+            flex-direction: column-reverse;
+        }
+        #accommodations h2 {
+            margin-right: 25px;
+        }
+        #accommodationsResultsFormat {
+            background-color: transparent;
+            width: auto;
+            display: grid;
+            justify-items: center;
+            margin-right: 0;
+        }
+        #accommodationsResults {
+            background-color: transparent;
+            width: auto;
+            display: grid;
+            justify-items: center;
+        }
         #accommodationsResults .card {          
             height: 196px;
             width:321px;
@@ -566,12 +638,32 @@ footer div {
         #accommodationsResults .card img {
             width: 97%;
         }
+        #returnLine {
+            width: auto;
+            margin-right: 225px;
+        }
+        #accommodationsPopular {  
+            display: grid;          
+            margin-top: 1rem;
+            align-items: center;
+            width: 350px;
+            justify-content: center;
+            align-self: center;
+        }
         #accommodationsPopular .card {          
             height: 196px;
             width:321px;
         }
+        #accommodationsPopular #upTitleFormat {
+            position: relative;;
+        }
         #accommodationsPopular #upTitleFormat img {
-            padding-right: 12rem;
+            position: absolute;
+            top: 1.4rem;
+            left : 18rem;
+        }
+        #activity {          
+            margin: 0;
         }
         #activity .card {          
             height: 196px;
@@ -602,16 +694,5 @@ footer div {
             grid-column: 1;
             grid-row: 7;
             margin-top: 0;
-        }
-        header{
-            display: grid;
-        }
-        #logo{
-            grid-column: 1;
-            grid-row: 1;
-        }
-        .signUp{
-            grid-column: 2;
-            grid-row: 1;
         }
 }
