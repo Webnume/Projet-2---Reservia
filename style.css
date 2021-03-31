@@ -438,6 +438,9 @@ footer div {
 }
 
 @media (max-width: 1327px) {
+    #activity .card {          
+        margin-bottom: 3rem;
+    }
     #activity .card1 {        
         height: 445px;    
         grid-column: 1;
