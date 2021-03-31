@@ -201,8 +201,6 @@ article{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
-
 }
 #accommodationsResultsFormat {
     display: flex;
@@ -222,7 +220,7 @@ article{
 }
 
 #accommodationsResults .card {
-    width: 250px;
+    /* width: 250px; */
     height: 200px;
     background-color: #fff;
     border-radius: 12px;
@@ -246,11 +244,28 @@ article{
     line-height: 5px;
     margin-top: 0.8rem;
 }
+
+
+#accommodations .rating ul {
+    padding: 2rem;
+   }
+#accommodations .rating ul li.ok {
+    font-size: 200%;
+    display : list-item;
+    list-style-image : url("images/icones/star-solid.svg");
+}
+#accommodations .rating ul li.nok {
+    font-size: 200%;
+    display : list-item;
+    list-style-image : url("images/icones/star-solid_grey.svg");
+}
+   
+
 #accommodationsResults .card .rating ul{
     display: flex;
     flex-direction: row;
     list-style:none;
-    padding: 0.7rem 0;
+    padding: 0.7rem 1.3rem;
     margin: 0;    
 }
 #accommodationsResults .card .rating ul li{
@@ -344,9 +359,8 @@ article{
 }
 
 #activity {
-    margin: 2rem auto;
+    margin: 2rem 0;
     display: grid;
-    max-width: 1200px;
     grid-gap: 1rem;
 }
 #activity #upTitleActivity {       
