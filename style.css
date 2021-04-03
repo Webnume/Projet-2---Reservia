@@ -454,7 +454,7 @@ footer div {
     margin-right: 14%;
 }
 
-@media (max-width: 1327px) {
+@media (max-width: 1279px) {
     #activity .card {          
         margin-bottom: 3rem;
         height: 250px;
