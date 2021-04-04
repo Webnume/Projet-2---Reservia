@@ -2,9 +2,9 @@ body{
     font-family: 'Raleway', sans-serif;  
     height: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 2rem;
 }
 main{
     max-width: 1340px;
@@ -12,9 +12,30 @@ main{
 }
 a {
     text-decoration: none;
+    color: #000000;
+}  
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:focus {
+    color: #000000;
+}
+
+a:hover {
+    color: #000000;
+}
+
+a:active {
+    color: #000000;
 }
 h1{
-    margin-top: 40px;
+    margin-top: 2rem;    
+    margin-bottom: 0;
     font-size: 2rem;
     font-weight: bold;
     display: block;
@@ -29,6 +50,12 @@ h3{
     font-size: 1rem;
     font-weight: bolder;
 }
+h4{
+    flex-basis: 100%;
+    font-size: 1rem;
+    font-weight:normal;
+    
+}
 
 .zoom {
     transition: transform 0.1s;
@@ -39,15 +66,15 @@ h3{
     cursor: pointer;
 }
 #returnLine {
-        flex-basis: 100%;
-        width: 0;
+    flex-basis: 100%;
+    font-weight: bold;
+
 }
 
 header {
     display: flex;     
     flex-direction: row;
     align-items: center;
-    padding: 0 2rem;
 }
 #logo{
     width: 100%;
@@ -72,7 +99,6 @@ nav a {
 #menu {
     display: flex; 
     flex-direction : row;
-    width: 336px;
 }
 #menu ul li {
     display: inline-block;
@@ -107,32 +133,38 @@ article{
 #search {
     display: flex;
     flex-direction: row;
-    padding: 20px 0;
-    min-width: 410px;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 #search img {
-    width: 14px; background-color: #F2F2F2; padding: 0px 14px;border-radius: 12px 0px 0px 12px;
+    width: 14px; 
+    background-color: #F2F2F2; 
+    padding: 0px 18px;
+    border-radius: 12px 0px 0px 12px;
 }  
 #search input{
     padding: 1px 10px; 
-    line-height: 40px;
+    line-height: 50px;
     outline: none !important;
     border:1px solid #F2F2F2;
     font-weight: bold;
     font-size: 1em ;
+    position: relative;
 }
 #search input::placeholder{
-    color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
 }
 #search button {
     background-color: #0065FC;
     border: none;
     color: white;
-    padding: 14px 25px;
+    padding: 18px 29px;
     text-align: center;
     font-size: 14px;
     border-radius: 0px 12px 12px 0px;
     font-weight: bold;
+    position: absolute;
 }
 #search .icon {
     display:none;
@@ -154,15 +186,16 @@ article{
     align-items: center;
     align-content: flex-start;
     border: 3px solid #F2F2F2;
-    padding-right: 20px;
     border-radius: 30px;
-    font-weight: bold;
+    font-weight: 600;
     width: auto;
 
 }
 #filters .filter img{
     width: 20px;
-
+}
+#filters .filter span{
+    margin-right: 1rem;
 }
 .info{
       display: flex;
@@ -231,7 +264,7 @@ article{
 #accommodationsResults .card img {
     border-radius: 12px 12px 0 0;
     width: 240px;
-    height: 60%;
+    height: 114px;
     margin: 5px 5px 0 5px;
     object-fit: cover;
   }
@@ -337,7 +370,7 @@ article{
     list-style:none;
     padding: 0;
     position: absolute;
-    top: 100px;
+    top: 69%;
 
 }
 #accommodationsPopular .card .rating ul li{
@@ -453,7 +486,7 @@ footer div {
     margin-right: 14%;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1276px) {
     #activity .card {          
         margin-bottom: 3rem;
         height: 250px;
@@ -495,13 +528,8 @@ footer div {
         justify-items: flex-start;
     }
     body{
-        font-family: 'Raleway', sans-serif;  
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         justify-content: center;
-        margin-left: 0;
+        margin: 0 2rem;
     }
     #accommodations {
         display: flex;
@@ -550,23 +578,36 @@ footer div {
     }
     footer {
         flex-direction: column;
-        height: 100%;
+        height: 487px;
     }
 }
 
 @media (max-width: 777px) {
 
+        body{
+            margin: auto;
+            align-items: unset;
+        }
         header{
             display: grid;
-            justify-content: center;
+            margin-top: 2rem;
         }
         #logo{
             grid-column: 1;
             grid-row: 1;
+            margin-left: 2rem;
         }
         #menu{
             grid-column: 1/2;
             grid-row: 2;
+        }  
+        #menu ul{
+            display: flex;
+        }
+        #menu li a {
+            border-bottom: 2px solid #F2F2F2;
+            width: 187.5px;
+            padding: 0;
         }
         #menu li a:hover {
             border-top: 0;
@@ -579,18 +620,21 @@ footer div {
         .signUp{
             grid-column: 1;
             grid-row: 1;
-            margin-left: 260px;
+            margin-left: 290px;
         }
         article {
             align-items: center;
         }
         article h1 {
             margin-left: 5%;
-            font-size: 1.8rem;
+            font-size: 1.62rem;
+        }
+        article h4 {
+            margin-left: 0;
         }
         #search {
             display: flex;
-            justify-content: center;
+            margin-left: 5%;
         }
         #search .icon {
             display:inline-block;
@@ -598,54 +642,41 @@ footer div {
         #search .icon img:nth-child(1){
             background-color: transparent;
             width: 1rem; ;
-            padding-left: 0rem;
+            margin-left: -24px;     
         }
         #search .text {
             display:none;
         }
         #search button{
             border-radius: 12px;
-            width: 60px;
+            width: 50px;
+            margin-left: -1rem;
         }
         #filters{
-            display: grid;
-            grid-gap: 1rem;
-            max-width: 388px;
+            display: flex;
+            margin: 0 5%;
         }
-        #filters :nth-child(1){            
-            grid-column: 1;
-            grid-row: 1;
+        #filters > strong{            
+            flex-basis: 100%;
+            margin-bottom: 1rem;
         }
-        #filters :nth-child(2){            
-            grid-column: 1;
-            grid-row: 2;
+        #filters .filter{            
+            margin: 0.3rem;
         }
-        #filters :nth-child(3){            
-            grid-column: 2;
-            grid-row: 2;
-        }
-        #filters :nth-child(4){            
-            grid-column: 1;
-            grid-row: 3;
-        }        
-        #filters :nth-child(5){            
-            grid-column: 1;
-            grid-row: 4;
-        } 
-        #filters :nth-child(6){            
-            grid-column: 1 / 3;
-            grid-row: 5;
-        }     
         .info {
             display: flex;
             flex-direction: row;
             align-items: center;
             margin-top: 0px;
             width: auto;
-            margin-bottom: 2rem;
+            margin: 2rem 0;
+        }
+        .info :nth-child(2){
+            width: 88%;
         }
         #accommodations {
             flex-direction: column-reverse;
+            width: 100%;
         }
         #accommodations h2 {
             margin-right: 25px;
@@ -656,6 +687,7 @@ footer div {
             display: grid;
             justify-items: center;
             margin-right: 0;
+            padding: 0;
         }
         #accommodationsResults {
             background-color: transparent;
@@ -663,28 +695,31 @@ footer div {
             display: grid;
             justify-items: center;
         }
-        #accommodationsResults .card {          
-            height: 196px;
+        #accommodationsResults .card { 
             width:321px;
         }
         #accommodationsResults .card img {
             width: 97%;
         }
+        #accommodationsResults .card ul {
+            margin-bottom: 12rem;
+        }
         #returnLine {
-            width: auto;
-            margin-right: 225px;
+            /* margin-right: 221px; */
+            justify-self: flex-start;
         }
         #accommodationsPopular {  
             display: grid;          
             margin-top: 1rem;
             align-items: center;
-            width: 350px;
+            border-radius: 0;
             justify-content: center;
             align-self: center;
+            padding: 0;
+            width: 100%;
         }
-        #accommodationsPopular .card {          
-            height: 196px;
-            width:321px;
+        #accommodationsPopular .card { 
+            width:335px;
         }
         #accommodationsPopular #upTitleFormat {
             position: relative;;
@@ -697,8 +732,7 @@ footer div {
         #activity {          
             margin: 0;
         }
-        #activity .card {          
-            height: 196px;
+        #activity .card {  
             width:321px;
         }
         #activity .card1 {
