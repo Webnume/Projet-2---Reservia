@@ -11,4 +11,4 @@
 * ex. Windows 10
 
 ## Demo live
-* [Reservia](https://github.com/matiassingers/awesome-readme)
+* [Reservia](https://github.com/Webnume/Y.GABA_2_18032021/deployments/activity_log?environment=github-pages)
