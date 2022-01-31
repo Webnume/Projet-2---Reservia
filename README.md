@@ -1,12 +1,9 @@
-# Project Title
-
-Transformer une maquette en site web avec HTML & CSS
+# Transformer une maquette en site web avec HTML & CSS
 
 ## Description
 
 - Implémenter une interface responsive
 - Intégrer du contenu conformément à une maquette
-
 
 ### Dependencies
 
